@@ -18,6 +18,7 @@ To run the script, please follow the instructions below:
 1. **Download the Ego2Hands dataset**
   * This dataset is about 90GB in size as its training set contains ~180k images with segmentation and energy, and its evaluation set contains 2k fully annotated images. Make sure you have enough space for this project. 
   * Use the following download links and put the data in the proper path:
+  
   **Ego2Hands (train):**
 
     subject0-4: https://byu.box.com/s/moy2j92p9j9tv8mw8c1dgafn4r4pod19
