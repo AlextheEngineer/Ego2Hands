@@ -21,6 +21,10 @@ To run the script, please follow the instructions below:
   
   **Ego2Hands (train):** [subject0-4](https://byu.box.com/s/moy2j92p9j9tv8mw8c1dgafn4r4pod19), [subject5-10](https://byu.box.com/s/jdto18tt4q89pdmn2l2wiiics2ltdr54), [subject11-16](https://byu.box.com/s/0yj1iqlsmt7aw7odp3ns50e39nmer4vo), [subject17-21](https://byu.box.com/s/fr3lcjscu5xit6qbyqdooy6pi6uyk1q3)
 
-1. Step3
+  Move the training data into directory /data/Ego2Hands/[subject_num]. 
+   
+1. **Ego2Hands (eval): ** [subject22-25](https://byu.box.com/s/ys2a83r8iga0tlh7aogesc1g1i49jsur)
+
+1. 
 
 
