@@ -1,4 +1,4 @@
-# Ego2Hands: 
+# Ego2Hands
 
 <img src="imgs/00198_gt_vis_seq2.png" width="320">    <img src="imgs/00198_gt_vis_seq4.png" width="320">
 
@@ -11,3 +11,9 @@ See our [Youtube Demo](https://www.youtube.com/watch?v=WjmPgnDXiMA&ab_channel=Al
 
 ## Convolutional Segmentation Machine
 We introduce a well-balanced architecture with compact model size, fast inference speed and high accuracy for real-time two-hand segmentation/detection. The script for training and testing is provided in this repository. To run the script, please follow the instructions below:
+
+1. Step1
+1. Step2
+1. Step3
+
+
