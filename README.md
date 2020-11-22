@@ -10,7 +10,9 @@ See our [Youtube Demo](https://www.youtube.com/watch?v=WjmPgnDXiMA&ab_channel=Al
 <img src="imgs/demo.webp" width="480">
 
 ## Convolutional Segmentation Machine
-We introduce a well-balanced architecture with compact model size, fast inference speed and high accuracy for real-time two-hand segmentation/detection. The script for training and testing is provided in this repository. To run the script, please follow the instructions below:
+We introduce a well-balanced architecture with compact model size, fast inference speed and high accuracy for real-time two-hand segmentation/detection. The script for training and testing is provided in this repository. 
+
+To run the script, please follow the instructions below:
 
 1. **Download the repository**
 1. **Download the Ego2Hands dataset**
