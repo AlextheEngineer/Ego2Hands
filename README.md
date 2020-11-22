@@ -20,6 +20,7 @@ To run the script, please follow the instructions below:
   * Use the following download links and put the data in the proper path:
   
   **Ego2Hands (train):**
+  
     [subject0-4](https://byu.box.com/s/moy2j92p9j9tv8mw8c1dgafn4r4pod19)
     
     [subject5-10](https://byu.box.com/s/jdto18tt4q89pdmn2l2wiiics2ltdr54)
