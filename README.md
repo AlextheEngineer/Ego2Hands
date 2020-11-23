@@ -51,7 +51,7 @@ Run the following code for testing different functionalities using the arguments
       > display_interval: 1000\
       > save_interval: 2000
     * Trained models will be saved in "models_saved" folder. Outputs will be saved in the "outputs" folder.
-    * You can also train models without the input edge channel or energy output channel (note that "--energy" will also set "--input_edge" because the energy feature is applied incrementally).
+    * You can also train models without the input edge channel or energy output channel (note that **"--energy" will also set "--input_edge" because the energy feature is applied incrementally**).
     * Every "display_interval" iterations, the script displays training information and outputs visualization for the current batch in the "outputs" folder if "--save_outputs" is set.
     * Every "save_interval" iterations, the script evaluates the model on the evaluation sequences. Testing results will also be saved in "outputs" folder if "--save_outputs" is set.
     
@@ -124,6 +124,17 @@ Run the following code for testing different functionalities using the arguments
     
     * Record a background sequence (no hands) for your custom scene. Move the data into "/data/Ego2Hands/custom/custom_train/". When recording, please try to collect data with variety that properly represent the actual testing environment (for example, move back & forth, left & right, look up & down, left & right slightly. You could add in some slight rotation as well.) For the demo video, we collected the background sequence with the screen playing a video of the gameplay.
     * Record a testing sequence (with hands) for your custom scene. Move the data into "/data/Ego2Hands/custom/custom_eval/".
-    * Set the path in the config file
+    * Check the path in the config file to see if "custom_bg_dir" and "custom_eval_dir" correctly lead to the saved data.
+    * Make sure "models_saved/ego2hands/CSM/with_energy/1/ego2hands_CSM_seg_pretrained.pth.tar" exists for adaptation. If you desire to run custom adaptation on settings other than "with_energy" (we provide pretrained models with input_edge and energy), you would need to pretrain the model yourself with the desired setting first. In our experiments, CSM with input edge and energy has the best performance.
+    
+    To adapt to the custom scene, run:
+    
+    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --custom --save_outputs**
+    
+    * This will use the first instance of the trained model with input edge and energy as pretrained model and adapt on the custom scene. "--custom" setting does not support multiple models as it is only for quick evaluation. The custom-adapted model will be saved as "models_saved/ego2hands/CSM/with_energy/1/ego2hands_CSM_seg_custom_pretrained.pth.tar".
+    
+    To test on the custom scene, run:
+    
+    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --eval --custom --save_outputs**
     
     
