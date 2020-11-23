@@ -122,6 +122,7 @@ Run the following code for testing different functionalities using the arguments
   
     To adapt a pretrained model on your custom sequence, please do the following:
     
-    * Record a background sequence
+    * Record a background sequence (no hands) for your custom scene. Move the data into "/data/Ego2Hands/custom/custom_train/". When recording, please try to collect data with variety that properly represent the actual testing environment (for example, move back & forth, left & right, look up & down, left & right slightly. You could add in some slight rotation as well.) 
+    * Record a testing sequence (with hands) for your custom scene. Move the data into "/data/Ego2Hands/custom/custom_eval/".
     
     
