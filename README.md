@@ -34,13 +34,14 @@ To run the script, please follow the instructions below:
 3. **Usage**
 Run the following code for testing different functionalities using the arguments below:
 
-  - [x] Input edge channel
-  - [x] Output energy channel
-  - [x] Training multiple models (3)
-  - [x] Saving outputs for visualization.
-
   * Training
-  
+ 
+    - [x] Input edge channel
+    - [x] Output energy channel
+    - [x] Training multiple models (3)
+    - [x] Saving outputs for visualization.
+
+ 
     > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs
     
     * Models will be saved in "models_saved" folder. Outputs will be saved in the "outputs" folder.
