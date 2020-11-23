@@ -23,6 +23,10 @@ To run the script, please follow the instructions below:
 
     Move the training data into directory "/data/Ego2Hands/train/". The "/train/" folder should contain the subjects' folders. 
     
+    * **Backgrounds:** [Download link]()
+    
+    Move the background images 
+    
     * **Ego2Hands (eval):** [subject22-25](https://byu.box.com/s/ys2a83r8iga0tlh7aogesc1g1i49jsur)
 
     Move the evaluation data into directory "/data/Ego2Hands/eval/". The "/eval/" folder should contain the sequence folders and their corresponding background folders.
