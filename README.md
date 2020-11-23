@@ -39,6 +39,7 @@ Run the following code for testing different functionalities using the arguments
     - [x] Input edge channel
     - [x] Output energy channel
     - [ ] Training multiple models
+    - [ ] Domain adaptation
     - [x] Saving outputs for visualization.
  
     > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --save_outputs**
@@ -59,6 +60,7 @@ Run the following code for testing different functionalities using the arguments
     - [x] Input edge channel
     - [x] Output energy channel
     - [ ] Testing multiple models
+    - [ ] Domain adaptation
     - [x] Saving outputs for visualization.
   
     > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --eval --save_outputs**
@@ -71,6 +73,7 @@ Run the following code for testing different functionalities using the arguments
     - [x] Input edge channel
     - [x] Output energy channel
     - [x] Training multiple models
+    - [ ] Domain adaptation
     - [x] Saving outputs for visualization.
   
     > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs**
@@ -80,8 +83,39 @@ Run the following code for testing different functionalities using the arguments
     - [x] Input edge channel
     - [x] Output energy channel
     - [x] Testing multiple models
+    - [ ] Domain adaptation
     - [x] Saving outputs for visualization.
     
     > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --test_all --num_models 3 --save_outputs**
     
     * "--test_all" automatically sets "--eval" and will evaluate the number of models specified by "--num_models". If the script cannot find the saved model that ends with "pretrained.pth.tar", it skips the model because this indicates that a pretrained model for testing does not exist.
+    
+  * Domain adaptation 
+  
+    - [x] Input edge channel
+    - [x] Output energy channel
+    - [x] Training multiple models
+    - [x] Domain adaptation
+    - [x] Saving outputs for visualization.
+    
+    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --adapt --save_outputs**
+    
+    * "--adapt" sets the script in adaptation mode. For training, adaptation requires models to be pretrained first.
+    * Adaptation mode replaces the random training backgrounds with background images for that specific sequence during data generation.
+    * Adapted model for each sequence will be saved in the corresponding save location for the specified setting. 
+    * Output visualization will be saved in the "outputs" folder if "--save_outputs" is set.
+    * If all 3 pretrained models are available, this will train 3 * 8 = 24 scene-adapted models. 
+    
+    - [x] Input edge channel
+    - [x] Output energy channel
+    - [x] Testing multiple models
+    - [x] Domain adaptation
+    - [x] Saving outputs for visualization.
+    
+    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --test_all --num_models 3 --adapt --save_outputs**
+    
+    * This will test all scene-adapted models and display the evaluation results.
+    * Output visualization will be saved in the "outputs" folder if "--save_outputs" is set. 
+    * Adapted models should outperform the pretrained models.
+    
+    
