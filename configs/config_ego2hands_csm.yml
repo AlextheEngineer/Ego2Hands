@@ -1,0 +1,32 @@
+dataset: "ego2hands"
+model_name: "CSM"
+dataset_train_dir: "data/Ego2Hands/train"
+dataset_eval_dir: "data/Ego2Hands/eval/"
+bg_all_dir: "data/Ego2Hands/backgrounds"
+# Set the following parameters for custom scene training and testing
+custom_bg_dir: ""
+custom_eval_dir: ""
+custom_scene_brightness: "" #[dark, normal, bright]
+
+workers: 4
+batch_size: 4
+num_seqs: 8
+max_iter_seg: 10
+max_iter_seg_adapt: 10
+display_interval: 10
+save_interval: 10
+num_classes : 3
+weight_decay: 0.001
+
+base_lr_seg: 0.0001
+base_lr_seg_adapt: 0.00001
+#-------------lr_policy--------------------#
+# step
+lr_policy: 'step'
+policy_parameter_seg:
+  gamma: 0.5
+  step_size: 20000
+  
+policy_parameter_seg_adapt:
+  gamma: 0.5
+  step_size: 5000
