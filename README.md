@@ -25,9 +25,7 @@ To run the script, please follow the instructions below:
     
     * **Backgrounds:** [Download link](https://byu.box.com/s/dc16feb1nhswm3imtce7f6r5ai7d0i6w)
     
-    Move the background data into directory "/data/Ego2Hands/backgrounds". The background images are collected from online sources with free license and we do not own rights for the background images. We also used the images from the DAVIS 2016 and 2017 dataset as background images. Please download them through https://davischallenge.org/ and extract the images into the "/data/Ego2Hands/backgrounds" directory. If you use the DAVIS data, please abide by their license rules. Thanks!
-    
-    Move the background images 
+    Move the background data into directory "/data/Ego2Hands/backgrounds". The background images are collected from online sources with free license and we do not own rights for the background images. We also used the images from the DAVIS 2016 and 2017 dataset as background images. Please download them through https://davischallenge.org/ and extract the images into the "/data/Ego2Hands/backgrounds" directory as well. If you use the DAVIS data, please abide by their term of use.
     
     * **Ego2Hands (eval):** [subject22-25](https://byu.box.com/s/ys2a83r8iga0tlh7aogesc1g1i49jsur)
 
@@ -45,6 +43,11 @@ Run the following code for testing different functionalities using the arguments
  
     > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --save_outputs
     
+    * Modify arguments in the config file for actual training. We used 
+      > max_iter_seg: 100000
+      > max_iter_seg_adapt: 10000
+      > display_interval: 1000
+      > save_interval: 2000
     * Models will be saved in "models_saved" folder. Outputs will be saved in the "outputs" folder.
     * You can also train models without the input edge channel or energy output channel (however setting "--energy" will also set "--input_edge" because the energy feature is applied incrementally).
     
