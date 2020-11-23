@@ -118,4 +118,10 @@ Run the following code for testing different functionalities using the arguments
     * Output visualization will be saved in the "outputs" folder if "--save_outputs" is set. 
     * Adapted models should outperform the pretrained models.
     
+  * Custom testing
+    To adapt a pretrained model on your custom sequence, please follow the steps below:
+    1. hi
+    1. hi
+    1. hi
+    
     
