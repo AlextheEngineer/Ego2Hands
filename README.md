@@ -29,7 +29,7 @@ To run the script, please follow the instructions below:
     
     * **Ego2Hands (eval):** [subject22-25](https://byu.box.com/s/ys2a83r8iga0tlh7aogesc1g1i49jsur)
 
-    Move the evaluation data into directory "/data/Ego2Hands/eval/". The "/eval/" folder should contain the sequence folders and their corresponding background folders.
+    Move the evaluation data into directory "/data/Ego2Hands/eval/". The "eval/" folder should contain the sequence folders and their corresponding background folders.
     
 3. **Usage**
 Run the following code for testing different functionalities:
@@ -39,6 +39,11 @@ Run the following code for testing different functionalities:
     - [x] Input edge channel
     - [x] Output energy channel
     - [x] Training multiple models (3)
-    - [x] Saving outputs to the output directory
+    - [x] Saving outputs for visualization.
 
     > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs
+    
+    * Models will be saved in "models_saved" folder. Outputs will be saved in the "outputs" folder.
+    * You can also train models without the input edge channel or energy output channel (however setting "--energy" will also set "--input_edge" because the energy feature is applied incrementally). 
+    
+  * Testing
