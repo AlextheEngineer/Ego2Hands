@@ -23,7 +23,9 @@ To run the script, please follow the instructions below:
 
     Move the training data into directory "/data/Ego2Hands/train/". The "/train/" folder should contain the subjects' folders. 
     
-    * **Backgrounds:** [Download link]()
+    * **Backgrounds:** [Download link](https://byu.box.com/s/dc16feb1nhswm3imtce7f6r5ai7d0i6w)
+    
+    Move the background data into directory "/data/Ego2Hands/backgrounds". The background images are collected from online sources with free license and we do not own rights for the background images. We also used the images from the DAVIS 2016 and 2017 dataset. Please download them through https://davischallenge.org/ and extract the images into the "/data/Ego2Hands/backgrounds" directory.
     
     Move the background images 
     
@@ -40,7 +42,6 @@ Run the following code for testing different functionalities using the arguments
     - [x] Output energy channel
     - [ ] Training multiple models
     - [x] Saving outputs for visualization.
-
  
     > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --save_outputs
     
