@@ -4,9 +4,9 @@ dataset_train_dir: "data/Ego2Hands/train"
 dataset_eval_dir: "data/Ego2Hands/eval/"
 bg_all_dir: "data/Ego2Hands/backgrounds"
 # Set the following parameters for custom scene training and testing
-custom_bg_dir: ""
-custom_eval_dir: ""
-custom_scene_brightness: "" #[dark, normal, bright]
+custom_bg_dir: "data/Ego2Hands/custom/custom_train"
+custom_eval_dir: "data/Ego2Hands/custom/custom_eval"
+custom_scene_brightness: "normal" #[dark, normal, bright]
 
 workers: 4
 batch_size: 4
