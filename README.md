@@ -31,7 +31,7 @@ To run the script, please follow the instructions below:
 
     Move the evaluation data into directory "/data/Ego2Hands/eval/". The "eval/" folder should contain the sequence folders and their corresponding background folders.
     
-3. **Usage**
+3. **Usage:**\
 Run the following code for testing different functionalities using the arguments below:
 
   * Training
