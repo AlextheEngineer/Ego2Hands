@@ -120,7 +120,7 @@ Run the following code for testing different functionalities using the arguments
     
   * **Custom testing**
   
-    To adapt a pretrained model on your custom sequence, please do the following:\
+    To adapt a pretrained model on your custom sequence, please do the following:
     
     * Record a background sequence
     
