@@ -45,14 +45,10 @@ Run the following code for testing different functionalities using the arguments
     
     * Modify arguments in the config file for actual training. We used the following values for our experiments.
     
-      > max_iter_seg: 100000
-      
-      > max_iter_seg_adapt: 10000
-      
-      > display_interval: 1000
-      
-      > save_interval: 2000
-      
+      > max_iter_seg: 100000\
+      > max_iter_seg_adapt: 10000\
+      > display_interval: 1000\
+      > save_interval: 2000\
     * Models will be saved in "models_saved" folder. Outputs will be saved in the "outputs" folder.
     * You can also train models without the input edge channel or energy output channel (however setting "--energy" will also set "--input_edge" because the energy feature is applied incrementally).
     
