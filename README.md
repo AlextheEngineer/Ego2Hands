@@ -51,6 +51,8 @@ Run the following code for testing different functionalities using the arguments
       > save_interval: 2000
     * Trained models will be saved in "models_saved" folder. Outputs will be saved in the "outputs" folder.
     * You can also train models without the input edge channel or energy output channel (note that "--energy" will also set "--input_edge" because the energy feature is applied incrementally).
+    * Every "display_interval" iterations, the script displays training information and outputs visualization for the current batch in the "outputs" folder if "--save_outputs" is set.
+    * Every "save_interval" iterations, the script evaluates the model on the evaluation sequences. Testing results will also be saved in "outputs" folder if "--save_outputs" is set.
     
   * Testing
   
