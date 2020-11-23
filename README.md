@@ -30,9 +30,11 @@ To run the script, please follow the instructions below:
 3. **Usage**
 Run the following code for testing different functionalities:
 
-- [x] Input edge channel
-- [x] Output energy channel
-- [x] Training multiple models (3)
-- [x] Saving outputs to the output directory
+  * Training
 
-> python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs
+    - [x] Input edge channel
+    - [x] Output energy channel
+    - [x] Training multiple models (3)
+    - [x] Saving outputs to the output directory
+
+    > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs
