@@ -129,12 +129,13 @@ Run the following code for testing different functionalities using the arguments
     
     To adapt to the custom scene, run:
     
-    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --custom --save_outputs**
+      > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --custom --save_outputs**
     
-    * This will use the first instance of the trained model with input edge and energy as pretrained model and adapt on the custom scene. "--custom" setting does not support multiple models as it is only for quick evaluation. The custom-adapted model will be saved as "models_saved/ego2hands/CSM/with_energy/1/ego2hands_CSM_seg_custom_pretrained.pth.tar".
+      * This will use the first instance of the trained model with input edge and energy as pretrained model and adapt on the custom scene. "--custom" setting does not support multiple models as it is only for quick evaluation. The custom-adapted model will be saved as "models_saved/ego2hands/CSM/with_energy/1/ego2hands_CSM_seg_custom_pretrained.pth.tar".
     
     To test on the custom scene, run:
     
-    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --eval --custom --save_outputs**
+      > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --eval --custom**
     
+      * This will use the custom-adapted model to evaluate on the collected test sequence. Output visualization will be saved in "outputs/ego2hands_CSM_edge1_energy1_seg_test_custom" regardless of the setting of "--save_outputs".
     
