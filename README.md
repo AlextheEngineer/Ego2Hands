@@ -106,7 +106,6 @@ Run the following code for testing different functionalities using the arguments
     * Output visualization will be saved in the "outputs" folder if "--save_outputs" is set.
     * If all 3 pretrained models are available, this will train 3 * 8 = 24 scene-adapted models. 
     
-    
     - [x] Input edge channel
     - [x] Output energy channel
     - [x] Testing multiple models
