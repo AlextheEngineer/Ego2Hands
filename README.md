@@ -138,4 +138,5 @@ Run the following code for testing different functionalities using the arguments
       > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --eval --custom**
     
       * This will use the custom-adapted model to evaluate on the collected test sequence. Output visualization will be saved in "outputs/ego2hands_CSM_edge1_energy1_seg_test_custom" regardless of the setting of "--save_outputs".
-    
+      
+    To test on the custom scene using only the pretrained model without custom domain adaptation, just copy the pretrained model at"models_saved/ego2hands/CSM/with_energy/1/ego2hands_CSM_seg_custom_pretrained.pth.tar" and rename the copy as "ego2hands_CSM_seg_custom_pretrained.pth.tar". The pretrained model is capable of achieving.
