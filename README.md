@@ -41,7 +41,7 @@ Run the following code for testing different functionalities using the arguments
     - [ ] Training multiple models
     - [x] Saving outputs for visualization.
  
-    > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --save_outputs
+    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --save_outputs
     
     * Modify the arguments below in the config file for actual training. We used the following values for our experiments.
     
@@ -61,7 +61,7 @@ Run the following code for testing different functionalities using the arguments
     - [ ] Testing multiple models
     - [x] Saving outputs for visualization.
   
-    > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --eval --save_outputs
+    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --eval --save_outputs
   
     * Evaluation results for all 8 evaluation sequences will be displayed in the terminal for model with the corresponding setting (using input edge map and energy output channel).
     * Output visualization for all test images will be saved in the "outputs" directory.
@@ -73,7 +73,7 @@ Run the following code for testing different functionalities using the arguments
     - [x] Training multiple models
     - [x] Saving outputs for visualization.
   
-    > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs
+    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs
     
     * "--train_all" and "--num_models" need to be used to train the specified amount of model instances. As training images are not fixed and are composited in training time, each model experiences different training instances and can have variance. In our experiments, most models have stable performance after training for 100k iterations with batch size of 4. 
     
@@ -82,6 +82,6 @@ Run the following code for testing different functionalities using the arguments
     - [x] Testing multiple models
     - [x] Saving outputs for visualization.
     
-    > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --test_all --num_models 3 --save_outputs
+    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --test_all --num_models 3 --save_outputs
     
     * "--test_all" automatically sets "--eval" and will evaluate the number of models specified by "--num_models". If the script cannot find the saved model that ends with "pretrained.pth.tar", it skips the model because this indicates that a pretrained model for testing does not exist.
