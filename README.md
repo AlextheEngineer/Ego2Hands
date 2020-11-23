@@ -38,15 +38,15 @@ Run the following code for testing different functionalities using the arguments
  
     - [x] Input edge channel
     - [x] Output energy channel
-    - [x] Training multiple models (3)
+    - [ ] Training multiple models
     - [x] Saving outputs for visualization.
 
  
-    > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs
+    > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --save_outputs
     
     * Models will be saved in "models_saved" folder. Outputs will be saved in the "outputs" folder.
     * You can also train models without the input edge channel or energy output channel (however setting "--energy" will also set "--input_edge" because the energy feature is applied incrementally).
-    * "--train_all" needs to be set if you want to train multiple model instances, which is specified using "--num_models" (default is 1 model). If "--train_all" is not set, the script will train 1 model.
     
   * Testing
   
+  > python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --save_outputs
