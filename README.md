@@ -28,3 +28,8 @@ To run the script, please follow the instructions below:
     Move the evaluation data into directory "/data/Ego2Hands/eval/". The "/eval/" folder should contain the sequence folders and their corresponding background folders.
     
 3. **Usage**
+Run the following code for initial testings:
+
+Training 3 model instances with input edge and energy, saving outputs for training and testing.
+
+> python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs
