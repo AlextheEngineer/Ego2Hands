@@ -558,8 +558,6 @@ def test_model(args):
 if __name__ == '__main__':
     args = parse()
     if args.custom:
-        #args.input_edge = True
-        #args.energy = True
         args.train_all = False
         args.adapt = False
         args.test_all = False
