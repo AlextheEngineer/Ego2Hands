@@ -34,7 +34,7 @@ To run the script, please follow the instructions below:
 3. **Usage:**\
 Run the following code for testing different functionalities using the arguments below:
 
-  * Training
+  * **Training**
  
     - [x] Input edge channel
     - [x] Output energy channel
@@ -55,7 +55,7 @@ Run the following code for testing different functionalities using the arguments
     * Every "display_interval" iterations, the script displays training information and outputs visualization for the current batch in the "outputs" folder if "--save_outputs" is set.
     * Every "save_interval" iterations, the script evaluates the model on the evaluation sequences. Testing results will also be saved in "outputs" folder if "--save_outputs" is set.
     
-  * Testing
+  * **Testing**
   
     - [x] Input edge channel
     - [x] Output energy channel
@@ -68,7 +68,7 @@ Run the following code for testing different functionalities using the arguments
     * Evaluation results for all 8 evaluation sequences will be displayed in the terminal for model with the corresponding setting (using input edge map and energy output channel).
     * Output visualization for all test images will be saved in the "outputs" directory.
     
-  * Training and testing multiple models
+  * **Training and testing multiple models**
   
     - [x] Input edge channel
     - [x] Output energy channel
@@ -90,7 +90,7 @@ Run the following code for testing different functionalities using the arguments
     
     * "--test_all" automatically sets "--eval" and will evaluate the number of models specified by "--num_models". If the script cannot find the saved model that ends with "pretrained.pth.tar", it skips the model because this indicates that a pretrained model for testing does not exist.
     
-  * Domain adaptation 
+  * **Domain adaptation**
   
     - [x] Input edge channel
     - [x] Output energy channel
@@ -118,10 +118,10 @@ Run the following code for testing different functionalities using the arguments
     * Output visualization will be saved in the "outputs" folder if "--save_outputs" is set. 
     * Adapted models should outperform the pretrained models.
     
-  * Custom testing
-    To adapt a pretrained model on your custom sequence, please follow the steps below:
-    1. hi
-    1. hi
-    1. hi
+  * **Custom testing**
+  
+    To adapt a pretrained model on your custom sequence, please do the following:\
+    
+    * Record a background sequence
     
     
