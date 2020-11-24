@@ -129,6 +129,10 @@ Run the following code for testing different functionalities using the arguments
     * Output visualization will be saved in the "outputs" folder if "--save_outputs" is set. 
     * Adapted models should outperform the pretrained models.
     
+  * **Speed test**
+  
+    * Setting the "--speed_test" will evaluate the model on the evaluation sequences and skip output visualization as well as score evaluation. Instead it times the time it takes for the model to make an estimation and display the averaged results.
+    
   * **Custom testing**
   
     To adapt a pretrained model on your custom sequence, please do the following:
