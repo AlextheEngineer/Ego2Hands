@@ -31,8 +31,8 @@ To run the script, please follow the instructions below:
 
     Move the evaluation data into directory "/data/Ego2Hands/eval/". The "eval/" folder should contain the sequence folders and their corresponding background folders.
  
-3. (Optional) **Download the pretrained models**
-  * We provide pretrained models with input edge channel and energy output channel as well as the scene-adapted models for the 8 evaluation sequences. You can test the models' performance by copying the provided models into the correct directory and following the instructions for testing below.
+3. **Download the pretrained models (Optional)**
+We provide [pretrained models](https://byu.box.com/s/t30xmoum43c4fdctjvdk72wba62n6b6o) with input edge channel and energy output channel as well as the scene-adapted models for the 8 evaluation sequences. You can test the models' performance by copying the provided models into the correct directory and following the instructions for testing below.
  
 4. **Usage:**\
 Run the following code for testing different functionalities using the arguments below:
