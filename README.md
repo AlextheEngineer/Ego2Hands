@@ -145,3 +145,6 @@ Run the following code for testing different functionalities using the arguments
 We collected a small [gesture dataset](https://byu.box.com/s/3m0u0jwepac6ot01p0xtrqknx6lbvbna) (2 subjects, 5 static gestures). The "gesture_annotations.txt" file consists of all the bounding box, label, image path info needed to extract the squared bounding boxes for creating input images.
     
 We trained a very simple classifier (Resnet with only 2 downsampling layers each with 1 block followed by fully connected layer) to classify 5 classes given a cropped hand segmentation image (64x64, binary input). Feel free to train your classifier using our gesture dataset for real-time gesture control. 
+
+## License
+This dataset can only be used for scientific/non-commercial purposes. If you use this dataset in your research, please cite the corresponding [paper](https://arxiv.org/abs/2011.07252).
