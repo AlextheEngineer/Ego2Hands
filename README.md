@@ -35,11 +35,13 @@ To run the script, please follow the instructions below:
 We provide [pretrained models](https://byu.box.com/s/t30xmoum43c4fdctjvdk72wba62n6b6o) with input edge channel and energy output channel as well as the scene-adapted models for the 8 evaluation sequences. You can test the models' performance by copying the provided models into the correct directory and following the instructions for testing below.
  
 4. **Environment Setup**
-We used the following steps to set up the proper environment in Anaconda:
-
-1. hi
-1. hi
-1. hi
+We used the following steps to set up the proper environment in Anaconda on a Windows machine:
+- conda create --name ego2hands_env python=3.7
+- conda activate ego2hands_env
+- conda install -c anaconda numpy
+- conda install -c conda-forge opencv
+- conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch (see https://pytorch.org/ for a proper setting specific for your machine)
+- 
 
 5. **Usage:**\
 Run the following code for testing different functionalities using the arguments below:
