@@ -163,5 +163,7 @@ We collected a small [gesture dataset](https://byu.box.com/s/3m0u0jwepac6ot01p0x
     
 We trained a very simple classifier (Resnet with only 2 downsampling layers each with 1 block followed by fully connected layer) to classify 5 classes given a cropped hand segmentation image (64x64, binary input). Feel free to train your classifier using our gesture dataset for real-time gesture control. 
 
+For overwriting the keyboard keys with python control, please keep in mind that games that use DirectX need "PyDirectInput" for key controls and mouse clicks. To simulate mouse movement (with speed instead of instant location change), try 
+
 ## License
 This dataset can only be used for scientific/non-commercial purposes. If you use this dataset in your research, please cite the corresponding [paper](https://arxiv.org/abs/2011.07252).
