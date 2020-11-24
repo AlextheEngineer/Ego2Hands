@@ -40,7 +40,9 @@ We used the following steps to set up the proper environment in Anaconda on a Wi
   > conda activate ego2hands_env\
   > conda install -c anaconda numpy\
   > conda install -c conda-forge opencv\
-  > conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch (see https://pytorch.org/ for a proper setting specific for your machine) 
+  > conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch (see https://pytorch.org/ for a proper setting specific for your machine)\
+  > conda install -c conda-forge easydict\
+  > conda install -c intel pyyaml
 
 5. **Usage:**\
 Run the following code for testing different functionalities using the arguments below:
