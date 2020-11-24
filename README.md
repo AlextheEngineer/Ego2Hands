@@ -36,10 +36,10 @@ We provide [pretrained models](https://byu.box.com/s/t30xmoum43c4fdctjvdk72wba62
  
 4. **Environment Setup**
 We used the following steps to set up the proper environment in Anaconda on a Windows machine:
-  > conda create --name ego2hands_env python=3.7
-  > conda activate ego2hands_env
-  > conda install -c anaconda numpy
-  > conda install -c conda-forge opencv
+  > conda create --name ego2hands_env python=3.7\
+  > conda activate ego2hands_env\
+  > conda install -c anaconda numpy\
+  > conda install -c conda-forge opencv\
   > conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch (see https://pytorch.org/ for a proper setting specific for your machine) 
 
 5. **Usage:**\
