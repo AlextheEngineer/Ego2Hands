@@ -55,7 +55,7 @@ Run the following code for testing different functionalities using the arguments
     - [ ] Domain adaptation
     - [x] Saving outputs for visualization.
  
-    > **python main_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --save_outputs**
+    > **python model_train_test.py --config config\config_ego2hands_csm.yml --input_edge --energy --save_outputs**
     
     * Modify the arguments below in the config file for actual training. We used the following values for our experiments.
     
