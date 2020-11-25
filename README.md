@@ -76,7 +76,7 @@ Run the following code for testing different functionalities using the arguments
     - [ ] Domain adaptation
     - [x] Saving outputs for visualization.
   
-    > **python main_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --eval --save_outputs**
+    > **python model_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --eval --save_outputs**
   
     * Evaluation results for all 8 evaluation sequences will be displayed in the terminal for model with the corresponding setting (using input edge map and energy output channel).
     * Output visualization for all test images will be saved in the "outputs" directory.
@@ -89,7 +89,7 @@ Run the following code for testing different functionalities using the arguments
     - [ ] Domain adaptation
     - [x] Saving outputs for visualization.
   
-    > **python main_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs**
+    > **python model_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --save_outputs**
     
     * "--train_all" and "--num_models" need to be used to train the specified amount of model instances. As training images are not fixed and are composited in training time, each model experiences different training instances and can have variance. In our experiments, most models have stable performance after training for 100k iterations with batch size of 4. 
     
@@ -99,7 +99,7 @@ Run the following code for testing different functionalities using the arguments
     - [ ] Domain adaptation
     - [x] Saving outputs for visualization.
     
-    > **python main_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --test_all --num_models 3 --save_outputs**
+    > **python model_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --test_all --num_models 3 --save_outputs**
     
     * "--test_all" automatically sets "--eval" and will evaluate the number of models specified by "--num_models". If the script cannot find the saved model that ends with "pretrained.pth.tar", it skips the model because this indicates that a pretrained model for testing does not exist.
     
@@ -111,7 +111,7 @@ Run the following code for testing different functionalities using the arguments
     - [x] Domain adaptation
     - [x] Saving outputs for visualization.
     
-    > **python main_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --adapt --save_outputs**
+    > **python model_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --train_all --num_models 3 --adapt --save_outputs**
     
     * "--adapt" sets the script in adaptation mode. For training, adaptation requires models to be pretrained first.
     * Adaptation mode replaces the random training backgrounds with background images for that specific sequence during data generation.
@@ -125,7 +125,7 @@ Run the following code for testing different functionalities using the arguments
     - [x] Domain adaptation
     - [x] Saving outputs for visualization.
     
-    > **python main_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --test_all --num_models 3 --adapt --save_outputs**
+    > **python model_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --test_all --num_models 3 --adapt --save_outputs**
     
     * This will test all scene-adapted models and display the evaluation results.
     * Output visualization will be saved in the "outputs" folder if "--save_outputs" is set. 
@@ -146,13 +146,13 @@ Run the following code for testing different functionalities using the arguments
     
     To adapt to the custom scene, run:
     
-      > **python main_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --custom --save_outputs**
+      > **python model_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --custom --save_outputs**
     
       * This will use the first instance of the trained model with input edge and energy as pretrained model and adapt on the custom scene. "--custom" setting does not support multiple models as it is only for quick evaluation. The custom-adapted model will be saved as "models_saved/ego2hands/CSM/with_energy/1/ego2hands_CSM_seg_custom_pretrained.pth.tar".
     
     To test on the custom scene, run:
     
-      > **python main_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --eval --custom**
+      > **python model_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --eval --custom**
     
       * This will use the custom-adapted model to evaluate on the collected test sequence. Output visualization will be saved in "outputs/ego2hands_CSM_edge1_energy1_seg_test_custom" regardless of the setting of "--save_outputs".
       
