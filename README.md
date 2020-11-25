@@ -101,7 +101,7 @@ Run the following code for testing different functionalities using the arguments
     
     > **python model_train_test.py --config configs\config_ego2hands_csm.yml --input_edge --energy --test_all --num_models 3 --save_outputs**
     
-    * "--test_all" automatically sets "--eval" and will evaluate the number of models specified by "--num_models". If the script cannot find the saved model that ends with "pretrained.pth.tar", it skips the model because this indicates that a pretrained model for testing does not exist.
+    * "--test_all" automatically sets "--eval" and will evaluate the number of models specified by "--num_models". If the script cannot find the saved model that ends with "pretrained.pth.tar", it skips the model because this indicates that this pretrained model for testing does not exist.
     
   * **Domain adaptation**
   
