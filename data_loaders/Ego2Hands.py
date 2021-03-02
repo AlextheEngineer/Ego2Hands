@@ -134,7 +134,7 @@ def read_bg_data(args, config, bg_adapt, seq_i):
     bg_path_list = []
     for root, dirs, files in os.walk(root_bg_dir):
         for file_name in files:
-            if file_name.endswith(".jpg") or file_name.endswith(".png"):
+            if file_name.endswith(".jpg") or file_name.endswith(".png") or file_name.endswith(".jpeg"):
                 bg_path_list.append(os.path.join(root, file_name))
     return bg_path_list
 
