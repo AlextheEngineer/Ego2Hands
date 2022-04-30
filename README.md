@@ -19,17 +19,17 @@ To run the script, please follow the instructions below:
   * This dataset is about 90GB in size as its training set contains ~180k images with segmentation and energy, and its evaluation set contains 2k fully annotated images. Make sure you have enough space for this project. 
   * Use the following download links and put the data in the proper path:
   
-    * **Ego2Hands (train):** [subject0-4](https://byu.box.com/s/moy2j92p9j9tv8mw8c1dgafn4r4pod19), [subject5-10](https://byu.box.com/s/jdto18tt4q89pdmn2l2wiiics2ltdr54), [subject11-16](https://byu.box.com/s/0yj1iqlsmt7aw7odp3ns50e39nmer4vo), [subject17-21](https://byu.box.com/s/fr3lcjscu5xit6qbyqdooy6pi6uyk1q3)
+    * **Ego2Hands (train):** [https://byu.box.com/s/3mrslybpnp8kyxkxcfma05cbib2tyee5]
 
-    Move the training data into directory "/data/Ego2Hands/train/". The "/train/" folder should contain the subjects' folders. 
+    Use Ctrl + click to download. Move the training data into directory "/data/Ego2Hands/train/". The "/train/" folder should contain the subjects' folders. There are 22 subjects for training.
     
     * **Backgrounds:** [Download link](https://byu.box.com/s/dc16feb1nhswm3imtce7f6r5ai7d0i6w)
     
     Move the background data into directory "/data/Ego2Hands/backgrounds". The background images are collected from online sources with free license and we do not own rights for the background images. We also used the images from the DAVIS 2016 and 2017 dataset as background images. Please download them through https://davischallenge.org/ and extract the images into the "/data/Ego2Hands/backgrounds" directory as well. DAVIS datasets should have 210 sequences and 14997 images available as backgrounds (we do not use their segmentation annotation). If you use the DAVIS data, please abide by their term of use. Also feel free to include your own background images as well since they are rather easy to collect. The data loader script recursively finds all files that ends with '.jpg' and '.png' in the background directory as background images.
     
-    * **Ego2Hands (eval):** [subject22-25](https://byu.box.com/s/ys2a83r8iga0tlh7aogesc1g1i49jsur)
+    * **Ego2Hands (eval):** [https://byu.box.com/s/gd1uywmyeodpwcyyi3dnyfrb8oybe8nx]
 
-    Move the evaluation data into directory "/data/Ego2Hands/eval/". The "eval/" folder should contain the sequence folders and their corresponding background folders.
+    Use Ctrl + click to download. Move the evaluation data into directory "/data/Ego2Hands/eval/". The "eval/" folder should contain the sequence folders and their corresponding background folders. There are 4 subjects and 8 sequences for evaluation.
  
 3. **Download the pretrained models (Optional)**
 We provide [pretrained models](https://byu.box.com/s/t30xmoum43c4fdctjvdk72wba62n6b6o) with input edge channel and energy output channel as well as the scene-adapted models for the 8 evaluation sequences. You can test the models' performance by copying the provided models into the correct directory and following the instructions for testing below.
