@@ -21,12 +21,12 @@ To run the script, please follow the instructions below:
   * This dataset is about 90GB in size as its training set contains ~180k images with segmentation and energy, and its evaluation set contains 2k fully annotated images. Make sure you have enough space for this project. 
   * Use the following download links and put the data in the proper path:
   
-    * **Ego2Hands (train):** [Download link](https://byu.box.com/s/3mrslybpnp8kyxkxcfma05cbib2tyee5)
-    * We trained our models using gray scale images. For experiments using RGB images, we provide the following processed training set with green screen color spill addressed using Adobe After Effect: [Download link](https://byu.box.com/s/y74a3tidxc0x6pnixtu4n794zvp04ftf)
+    * **Ego2Hands (train):** [Download link](https://app.box.com/s/3mrslybpnp8kyxkxcfma05cbib2tyee5)
+    * We trained our models using gray scale images. For experiments using RGB images, we provide the following processed training set with green screen color spill addressed using Adobe After Effect: [Download link](https://app.box.com/s/y74a3tidxc0x6pnixtu4n794zvp04ftf)
 
     Use Ctrl + click to download. Move the training data into directory "/data/Ego2Hands/train/". The "/train/" folder should contain the subjects' folders. There are 22 subjects for training.
     
-    * **Backgrounds:** [Download link](https://byu.box.com/s/dc16feb1nhswm3imtce7f6r5ai7d0i6w)
+    * **Backgrounds:** [Download link](https://app.box.com/s/dc16feb1nhswm3imtce7f6r5ai7d0i6w)
     
     Move the background data into directory "/data/Ego2Hands/backgrounds". The background images are collected from online sources with free license and we do not own rights for the background images. We also used the images from the DAVIS 2016 and 2017 dataset as background images. Please download them through https://davischallenge.org/ and extract the images into the "/data/Ego2Hands/backgrounds" directory as well. DAVIS datasets should have 210 sequences and 14997 images available as backgrounds (we do not use their segmentation annotation). If you use the DAVIS data, please abide by their term of use. Also feel free to include your own background images as well since they are rather easy to collect. The data loader script recursively finds all files that ends with '.jpg' and '.png' in the background directory as background images.
     
