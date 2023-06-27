@@ -30,12 +30,12 @@ To run the script, please follow the instructions below:
     
     Move the background data into directory "/data/Ego2Hands/backgrounds". The background images are collected from online sources with free license and we do not own rights for the background images. We also used the images from the DAVIS 2016 and 2017 dataset as background images. Please download them through https://davischallenge.org/ and extract the images into the "/data/Ego2Hands/backgrounds" directory as well. DAVIS datasets should have 210 sequences and 14997 images available as backgrounds (we do not use their segmentation annotation). If you use the DAVIS data, please abide by their term of use. Also feel free to include your own background images as well since they are rather easy to collect. The data loader script recursively finds all files that ends with '.jpg' and '.png' in the background directory as background images.
     
-    * **Ego2Hands (eval):** [Download link](https://byu.box.com/s/gd1uywmyeodpwcyyi3dnyfrb8oybe8nx)
+    * **Ego2Hands (eval):** [Download link](https://app.box.com/s/gd1uywmyeodpwcyyi3dnyfrb8oybe8nx)
 
     Use Ctrl + click to download. Move the evaluation data into directory "/data/Ego2Hands/eval/". The "eval/" folder should contain the sequence folders and their corresponding background folders. There are 4 subjects and 8 sequences for evaluation.
  
 3. **Download the pretrained models (Optional)**
-We provide [pretrained models](https://byu.box.com/s/t30xmoum43c4fdctjvdk72wba62n6b6o) with input edge channel and energy output channel as well as the scene-adapted models for the 8 evaluation sequences. You can test the models' performance by copying the provided models into the correct directory and following the instructions for testing below.
+We provide [pretrained models](https://app.box.com/s/t30xmoum43c4fdctjvdk72wba62n6b6o) with input edge channel and energy output channel as well as the scene-adapted models for the 8 evaluation sequences. You can test the models' performance by copying the provided models into the correct directory and following the instructions for testing below.
  
 4. **Environment Setup**
 We used the following steps to set up the proper environment in Anaconda on a Windows machine:
@@ -163,7 +163,7 @@ Run the following code for testing different functionalities using the arguments
     To test on the custom scene using only the pretrained model without custom domain adaptation, just copy the pretrained model at"models_saved/ego2hands/CSM/with_energy/1/ego2hands_CSM_seg_custom_pretrained.pth.tar" and rename the copy as "ego2hands_CSM_seg_custom_pretrained.pth.tar". The pretrained model is capable of achieving certain accuracy but scene-adapted model definitely has better performance.
     
 ## Gesture Control
-We collected a small [gesture dataset](https://byu.box.com/s/3m0u0jwepac6ot01p0xtrqknx6lbvbna) (2 subjects, 5 static gestures). The "gesture_annotations.txt" file consists of all the bounding box, label, image path info needed to extract the squared bounding boxes for creating input images.
+We collected a small [gesture dataset](https://app.box.com/s/3m0u0jwepac6ot01p0xtrqknx6lbvbna) (2 subjects, 5 static gestures). The "gesture_annotations.txt" file consists of all the bounding box, label, image path info needed to extract the squared bounding boxes for creating input images.
     
 We trained a very simple classifier (Resnet with only 2 downsampling layers each with 1 block followed by fully connected layer) to classify 5 classes given a cropped hand segmentation image (64x64, binary input). Feel free to train your classifier using our gesture dataset for real-time gesture control. 
 
